@@ -1,0 +1,253 @@
+body {
+    background-color: #0e0e0e;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav * { 
+    background-color: black; 
+    color: white; 
+}
+
+nav { 
+    text-align: center; 
+    background-color: black; 
+    display: flex; 
+    padding: 2%; 
+}
+
+.container_items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav .container_menu { 
+    width: 100%; 
+
+}
+
+.menu {
+    font-size: 25px;
+}
+
+nav #botones_menu { 
+    align-items: flex-end;
+    justify-content: center; 
+}
+
+nav ul { 
+    padding: 0; 
+    list-style-type: none; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: black; 
+}
+
+nav #logo { 
+    display: flex; 
+    align-items: center; 
+    width: min-content; 
+}
+
+nav #logo img { 
+    height: 75px; 
+    width: 75px; 
+    margin-right: 10px; 
+}
+
+nav #logo h1 { 
+    margin: 0; 
+}
+
+nav .container_menu, 
+nav .menu{ 
+    align-items: center; 
+}
+
+nav a { 
+    display: inline-block; 
+    padding: 5px; 
+    margin: 5px; 
+    text-decoration: none; 
+    color: white; 
+    transition: color 0.3s ease; 
+}
+
+nav a:hover { 
+    color: rgb(30, 63, 128); 
+}
+
+nav .button:hover { 
+    background-color: rgb(40, 83, 168); 
+    color: white; 
+}
+
+.button { 
+    width: 30%; 
+    display: inline; 
+    padding: 12px 35px; 
+    border-radius: 20px; 
+    background-color: rgb(30, 63, 128); 
+    color: white; 
+    text-decoration: none; 
+    justify-content: center; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+}
+
+.button:hover { 
+    background-color: rgb(40, 83, 168); 
+}
+
+#noticias {
+    width: 100%;
+}
+
+#noticias ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#noticias li {
+    position: relative;
+    width: 30%;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#noticias li:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 38, 255, 0.1);
+}
+#noticias img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#noticias li:hover img {
+    opacity: 0.8;
+}
+#noticias .titulo-noticia {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: calc(100% - 20px);
+    text-align: center;
+}
+
+#equipo{
+    width: 100%;
+}
+#equipo ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#equipo li {
+    position: relative;
+    width: 30%;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#equipo li:hover {
+    transform: scale(1.05);
+    background-color: rgb(63, 63, 63);
+}
+
+#equipo img {
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+#equipo .nombre {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: calc(100% - 20px);
+    text-align: center;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 3%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-seccion {
+    text-align: left;
+}
+
+.footer-seccion a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-seccion h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer .footer-seccion a:hover{
+    text-decoration: underline;
+    color: white;
+    text-decoration-color: white;
+}
+
+.footer-seccion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-seccion li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: black;
+}
+
+@media (max-with: 500px){
+    nav .botones_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
